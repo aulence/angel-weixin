@@ -137,6 +137,9 @@ body,a,button,input,textarea {
 .mt0 {
     margin-top: 0!important;
 }
+.mt10 {
+    margin-top: 10px;
+}
 .mt12 {
     margin-top: 12px;
 }
@@ -179,11 +182,12 @@ body,a,button,input,textarea {
     width: 36px; height: 50px;
     background: url("../img/content/arrow_right-gray.png") no-repeat;
     background-position: center;
-    -webkit-background-size: 24%;
-    background-size: 24%;
+    -webkit-background-size: 24% auto;
+    background-size: 24% auto;
     display: block;
     position: absolute;
-    top: 0; right: 0;
+    top: 50%; right: 0;
+	margin-top: -25px;
 }
 .imginfoli li i.arrRight {
     height: 98px;
@@ -202,6 +206,26 @@ body,a,button,input,textarea {
 .iconli li span, .indentli li span {
     width: 228px;
     margin-left: 22px;
+}
+/* 基本列表 */
+.baseli a > div {
+	padding-top: 8px; padding-bottom: 8px;
+	margin-right: 24px;
+}
+.baseli a > div p {
+	line-height: 26px;
+}
+.baseli p:first-child {
+	font-size: 16px;
+}
+.baseli p:last-child {
+	font-size: 13px;
+	color: #999;
+}
+.baseli a > div span {
+	width: auto; height: auto;
+	line-height: 26px;
+	display: inline;
 }
 /* 带缩进列表 */
 .indentli li span {
@@ -601,6 +625,89 @@ body,a,button,input,textarea {
 }
 .blockBtn button.pay {
     background-color: #ff9c00;
+}
+
+/******************************************/
+/* (DEMO文件请查看"html/_themeDefault_.html") */
+/* 弹出框部分 */
+/******************************************/
+.popupbox {
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+/* 纯文本型 & 支付密码型 */
+.popupbox.text, .popupbox.pay {
+	text-align: center;
+}
+/* 表单型 */
+.popupbox.form {
+	text-align: left;
+}
+.popupbox-maskLayer {
+	width: 100%; height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	z-index: 99997;
+}
+.popupbox-window {
+	width: 280px; height: auto;
+	background-color: #fff;
+	border-radius: 3px;
+	position: absolute;
+	left: 50%; top: 50px;
+	margin-left: -140px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 99998;
+}
+.popupbox-window.windowContent {
+	overflow: hidden;
+}
+.popupbox-window title {
+	width: 100%; height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+}
+.popupbox-window .content {
+	padding: 20px 15px;
+}
+.popupbox-window .bottom {
+	margin-bottom: 65px;
+}
+.popupbox-window .bottom button {
+	width: 100%; height: 65px;
+	background-color: #11a8bb;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	color: #fff;
+	position: absolute;
+	left: 0; bottom: 0;
+}
+/* 支付密码型详细设置 */
+.popupbox.pay .content i.icon {
+	width: 56px; height: 56px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 15px auto 20px;
+	display: block;
+}
+.popupbox.pay .content i.icon.ico-warning {
+	background-image: url("../img/content/Warning-2@2x.png");
+}
+.popupbox.pay .content p.txt {
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+}
+.popupbox.pay .content .password {
+	width: 90%; height: 30px;
+	margin: 25px auto 5px;
+	border: 1px solid #999;
+	border-radius: 3px;
 }
 
 /******************************************/

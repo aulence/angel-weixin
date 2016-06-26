@@ -7,16 +7,45 @@
 
 /* 预定时间块 */
 .appointmentTime {
-    background-color: #fff;
-    border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
-    padding-top: 20px; padding-bottom: 20px;
+	background-color: #fff;
+	border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
+	padding-top: 20px; padding-bottom: 20px;
 }
 
 /* 时间段选择容器 */
 .timeBucket {
-    width: 100%;
-    background-color: #89d3de;
-    border-bottom: 1px solid #79c3ce;
-    padding-top: 20px; padding-bottom: 20px;
-    overflow: auto;
+	width: 100%;
+	background-color: #89d3de;
+	border-bottom: 1px solid #79c3ce;
+	padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px;
+	overflow: auto;
 }
+.timeBucket input, .timeBucket span.inblock {
+	display: block;
+	float: left;
+}
+.timeBucket input {
+	width: calc(50% - 30px); height: 35px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 18px;
+	outline: none;
+	padding-left: 10px; padding-right: 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #fff;
+}
+.timeBucket span.inblock {
+	width: 40px; height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}
+input.hInput::-webkit-input-placeholder, textarea.hTxtArea::-webkit-input-placeholder {
+	color: #f3f3f3;
+}
+input.hInput::input-placeholder, textarea.hTxtArea::input-placeholder {
+	color: #f3f3f3;
+}
+
