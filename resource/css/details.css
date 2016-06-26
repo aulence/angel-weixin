@@ -85,30 +85,34 @@ input.hInput::input-placeholder, textarea.hTxtArea::input-placeholder {
 	background-color: #64d0e7;
 	padding-top: 20px; padding-bottom: 30px;
 }
+.userMainInfo a {
+	text-decoration: none;
+	outline: none;
+}
 /* 信息居中显示 */
 .userMainInfo .userPhoto, .userMainInfo .userName, .userMainInfo .level {
 	margin: 0 auto;
 	text-align: center;
 }
-.userMainInfo .userPhoto {
+.userMainInfo .userPhoto, .editPhoto .userPhoto {
 	width: 128px; height: 128px;
 	border: 1px solid #97dee8;
 	border-radius: 64px;
 	overflow: hidden;
 }
-.userMainInfo .userPhoto img {
+.userMainInfo .userPhoto img, .editPhoto .userPhoto img {
 	width: 100%; height: auto;
 }
 .userMainInfo .userName {
 	margin-top: 10px; margin-bottom: 15px;
 }
 .userMainInfo .userName i, .userMainInfo .userName span {
-	display: inline-block;
 	vertical-align: middle;
 	font-size: 17px;
 	color: #fff;
 	position: relative;
 	left: -10px;
+	display: inline-block;
 }
 .userMainInfo .userName i.ico-gender-girl {
 	width: 20px; height: 20px;
@@ -128,4 +132,91 @@ input.hInput::input-placeholder, textarea.hTxtArea::input-placeholder {
 	display: inline-block;
 	color: #008a9b;
 }
-
+/* 修改头像 & 我的订单（支付状态） */
+.editPhoto, .payStatusChoose {
+	background-color: #fff;
+	border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
+	padding: 10px;
+}
+.editPhoto a {
+	text-decoration: none;
+}
+.editPhoto .userPhoto {
+	width: 72px; height: 72px;
+	border: none;
+	float: left;
+}
+.editPhoto span {
+	line-height: 72px;
+	text-align: right;
+	color: #b7b7b7;
+	display: block;
+}
+/* 我的订单--支付状态选择 */
+.payStatusChoose {
+	padding: 15px 10px;
+	border-bottom: none;
+	overflow: auto;
+}
+.payStatusChoose span {
+	width: 50%; height: 40px;
+	border: 1px solid #11a8bb;
+	line-height: 38px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	color: #11a8bb;
+	float: left;
+	display: block;
+}
+.payStatusChoose span:first-child {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.payStatusChoose span:last-child {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-left: none;
+}
+.payStatusChoose span.checked {
+	background-color: #11a8bb;
+	color: #fff;
+}
+/* 投诉建议 */
+.complaintAndAdvice {
+	padding: 10px; padding-bottom: 0;
+}
+.complaintAndAdvice textarea {
+	width: 100%; height: 130px;
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	line-height: 22px;
+	font-size: 14px;
+	padding: 10px;
+	color: #666;
+}
+/**** 登录注册相关设置 ****/
+.loginPage .blockBtn { margin-bottom: 0;}
+.loginCtrl {
+	padding-left: 10px; padding-right: 10px;
+}
+.loginCtrl a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 16px;
+}
+.loginCtrl a:first-child {
+	float: left;
+}
+.loginCtrl a:last-child {
+	float: right;
+}
+.bindAccountCtrl {
+	line-height: 45px;
+	text-align: center;
+}
+.bindAccountCtrl a {
+	text-decoration: none;
+}

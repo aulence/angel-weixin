@@ -38,6 +38,7 @@ body,a,button,input,textarea {
     border: none;
     padding: 0;
     text-decoration: none;
+	font-size: 14px;
     color: #fff;
     display: block;
     position: absolute;
@@ -51,6 +52,12 @@ body,a,button,input,textarea {
     background-position: center;
     top: 4px;
 }
+.header .leftBtn.text {
+	width: auto; height: 32px;
+    background: none;
+	line-height: 32px;
+	margin-left: 10px;
+}
 .header .rightBtn {
     width: 40px; height: 40px;
     background-repeat: no-repeat;
@@ -58,6 +65,9 @@ body,a,button,input,textarea {
     background-size: 22px auto;
     background-position: 100% 50%!important;
     top: 0px; right: 10px;
+}
+.header .rightBtn.w_auto {
+	width: auto;
 }
 /* header按钮图标--咨询热线 */
 .header .ico-consult {
@@ -131,18 +141,13 @@ body,a,button,input,textarea {
     display: block;
 }
 /**** 外间距设置 ****/
-.mt-1 {
-	margin-top: -1px;
-}
-.mt0 {
-    margin-top: 0!important;
-}
-.mt10 {
-    margin-top: 10px;
-}
-.mt12 {
-    margin-top: 12px;
-}
+.mt-1 { margin-top: -1px}
+.mt0 { margin-top: 0!important }
+.mt10 { margin-top: 10px}
+.mt12 { margin-top: 12px}
+/* 内间距设置 */
+.pl10 { padding-left: 10px }
+.pr10 { padding-right: 10px }
 
 /******************************************/
 /* (DEMO文件请查看"html/_themeDefault_.html") */
@@ -193,6 +198,7 @@ body,a,button,input,textarea {
     height: 98px;
     -webkit-background-size: 24% 12%;
     background-size: 24%;
+	margin-top: -50px;
 }
 /* 列表文本 */
 .baseli li span, .iconli li span, .indentli li span, .payli li span, .resultli li span {
@@ -337,6 +343,9 @@ body,a,button,input,textarea {
     overflow: hidden;
     float: left;
 }
+.formli.normal li label, .formbtnli.normal li label {
+	color: #666;
+}
 .formiconli li .icon, .formbtniconli li .icon {
     margin-right: 10px;
     overflow: hidden;
@@ -348,7 +357,7 @@ body,a,button,input,textarea {
     overflow: hidden;
 }
 .formbtniconli li > div, .formbtnli li > div {
-    margin-right: 60px;
+    margin-right: 90px;
 }
 .formli li > div input, .formiconli li > div input, .formbtniconli li > div input, .formbtnli li > div input {
     width: 100%;
@@ -616,7 +625,7 @@ body,a,button,input,textarea {
     margin-top: 40px; margin-bottom: 20px;
     box-sizing: border-box;
 }
-.blockBtn button {
+.blockBtn button, .blockBtn a {
     width: 100%; height: 45px;
     background-color: #999999;
     border: none;
@@ -626,10 +635,17 @@ body,a,button,input,textarea {
     color: #fff;
     cursor: pointer;
 }
-.blockBtn button.ack {
+.blockBtn a {
+	line-height: 45px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+.blockBtn button.ack, .blockBtn a.ack {
     background-color: #11a8bb;
 }
-.blockBtn button.pay {
+.blockBtn button.pay, .blockBtn a.pay {
     background-color: #ff9c00;
 }
 
@@ -720,40 +736,38 @@ body,a,button,input,textarea {
 /* 主题字体设置部分 */
 /******************************************/
 /* 白色字体 */
-.font-white {
-    color: #fff !important;
-}
+.font-white { color: #fff !important }
 /* 蓝色强调字体 */
 .font-strong-blue {
     font-size: 18px;
     color: #11a8bb !important;
 }
 /* 蓝色字体 */
-.font-blue {
-    color: #11a8bb !important;
-}
+.font-blue { color: #11a8bb !important }
 /* 灰色字体 */
-.font-gray {
-    color: #999999 !important;
-}
+.font-gray { color: #999999 !important }
 /* 小灰色字体 */
 .font-light-gray {
     font-size: 14px;
     color: #999999 !important;
 }
 /* 红色字体 */
-.font-red {
-    color: #f54343 !important;
-}
+.font-red { color: #f54343 !important }
 /* 小红色字体 */
 .font-light-red {
     font-size: 14px;
     color: #f54343 !important;
 }
 /* 更小字体 */
-.font-lighter {
-    font-size: 13px;
-}
+.font-lighter { font-size: 13px; }
+/**** 常用行高 ****/
+.lh20 { line-height: 20px }
+.lh25 { line-height: 20px }
+.lh30 { line-height: 30px }
+.lh35 { line-height: 35px }
+.lh40 { line-height: 40px }
+.lh45 { line-height: 45px }
+.lh50 { line-height: 50px }
 /**** 带边框标注性字体 ****/
 .label-font-red, .label-font-blue {
     height: 20px;
@@ -851,6 +865,29 @@ body,a,button,input,textarea {
 .ico-info {
     background: url("../img/content/about@2x.png") no-repeat;
 }
+/**** 标注图标 ****/
+.ico-mark-checkstand, .ico-mark-alipay, .ico-mark-weixin {
+	width: 68px; height: 20px;
+	background-repeat: no-repeat;
+	background-position: left;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	vertical-align: text-bottom;
+	margin-left: 6px;
+	display: inline-block;
+}
+/* 标注--收银台 */
+.ico-mark-checkstand {
+	background-image: url("../img/content/ico-checkstand@2x.png");
+}
+/* 标注--支付宝 */
+.ico-mark-alipay {
+	background-image: url("../img/content/ico-alipay2x.png");
+}
+/* 标注--微信 */
+.ico-mark-weixin {
+	background-image: url("../img/content/ico-weixin@2x.png");
+}
 
 /******************************************/
 /* 媒体查询部分 */
@@ -918,6 +955,16 @@ body,a,button,input,textarea {
     .imginfoli li i.arrRight {
         height: 89px;
     }
+	/* 获取验证码按钮 */
+	.formbtniconli li button, .formbtnli li button {
+		width: auto; height: 28px;
+		padding: 0 8px;
+		font-size: 14px;
+		margin-top: -14px;
+	}
+	.formbtniconli li > div, .formbtnli li > div {
+		margin-right: 75px;
+	}
     /* 蓝色强调字体 */
     .font-strong-blue {
         font-size: 16px;
@@ -929,9 +976,7 @@ body,a,button,input,textarea {
         color: #999999;
     }
     /* 更小字体 */
-    .font-lighter {
-        font-size: 12px;
-    }
+    .font-lighter { font-size: 12px}
 }
 
 
