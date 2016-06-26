@@ -899,7 +899,7 @@ body,a,button,input,textarea {
         font-size: 14px;
     }
     /* 基本列表样式 */
-    .baseli li, .iconli li, .indentli li, .payli li, .imginfoli li, .formli li, .formiconli li, .formbtniconli li, .formbtnli li, .leftSlipBtnCkbli li {
+    .baseli li, .iconli li, .indentli li, .payli li, .imginfoli li, .formli li, .formiconli li, .formbtniconli li, .formbtnli li, .leftSlipBtnCkbli li, .orderli li, .resultli li, .cardiconarrli li {
         padding-left: 10px; padding-right: 10px;
         font-size: 14px;
     }
@@ -965,6 +965,13 @@ body,a,button,input,textarea {
 	.formbtniconli li > div, .formbtnli li > div {
 		margin-right: 75px;
 	}
+	/* 订单列表 */
+	.orderli li > div {
+		margin-right: 90px;
+	}
+	.orderli li > div:last-child p:first-child {
+		font-size: 16px;
+	}
     /* 蓝色强调字体 */
     .font-strong-blue {
         font-size: 16px;
@@ -977,6 +984,11 @@ body,a,button,input,textarea {
     }
     /* 更小字体 */
     .font-lighter { font-size: 12px}
+	/* 标注图标 */
+	.ico-mark-checkstand, .ico-mark-alipay, .ico-mark-weixin {
+		width: 64px; height: 18px;
+		margin-left: 2px;
+	}
 }
 
 
