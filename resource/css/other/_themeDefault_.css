@@ -122,7 +122,11 @@ h1 {
 .ico-clock {
     background: url("../../img/content/clock2x.png") no-repeat;
 }
-
+/* 手机图标 */
+.ico-mobile {
+    background: url("../../img/content/mobile.png") no-repeat;
+    background-size: 80% !important;
+}
 /******************************************/
 /* 媒体查询部分 */
 /******************************************/

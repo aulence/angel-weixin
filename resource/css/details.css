@@ -5,6 +5,10 @@
 * 开发人员：全组
 **/
 
+/******************************************/
+/* “首页”部分 */
+/******************************************/
+
 /* 预定时间块 */
 .appointmentTime {
 	background-color: #fff;
@@ -35,6 +39,10 @@
 	box-sizing: border-box;
 	color: #fff;
 }
+.timeBucket input:focus {
+	background-color: #f3f3f3;
+	color: #666;
+}
 .timeBucket span.inblock {
 	width: 40px; height: 35px;
 	line-height: 35px;
@@ -47,5 +55,77 @@ input.hInput::-webkit-input-placeholder, textarea.hTxtArea::-webkit-input-placeh
 }
 input.hInput::input-placeholder, textarea.hTxtArea::input-placeholder {
 	color: #f3f3f3;
+}
+/* B超显示页面 */
+.BUltrasonic {
+	padding: 10px;
+}
+.BUltrasonic p {
+	line-height: 30px;
+	font-size: 16px;
+}
+.dispBUltrasonic {
+	width: 100%; height: auto;
+	background-color: #fff;
+	padding-top: 10px; padding-bottom: 10px;
+}
+.dispBUltrasonic img {
+	max-width: 98%; max-height: 98%;
+	margin: 0 auto;
+	display: block;
+}
+
+/******************************************/
+/* “我的”部分 */
+/******************************************/
+
+/* 用户主要信息 */
+.userMainInfo {
+	width: 100%;
+	background-color: #64d0e7;
+	padding-top: 20px; padding-bottom: 30px;
+}
+/* 信息居中显示 */
+.userMainInfo .userPhoto, .userMainInfo .userName, .userMainInfo .level {
+	margin: 0 auto;
+	text-align: center;
+}
+.userMainInfo .userPhoto {
+	width: 128px; height: 128px;
+	border: 1px solid #97dee8;
+	border-radius: 64px;
+	overflow: hidden;
+}
+.userMainInfo .userPhoto img {
+	width: 100%; height: auto;
+}
+.userMainInfo .userName {
+	margin-top: 10px; margin-bottom: 15px;
+}
+.userMainInfo .userName i, .userMainInfo .userName span {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 17px;
+	color: #fff;
+	position: relative;
+	left: -10px;
+}
+.userMainInfo .userName i.ico-gender-girl {
+	width: 20px; height: 20px;
+	background: url("../img/content/gender-girl@2x.png") no-repeat;
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	background-position: center;
+	top:-2px;
+}
+.userMainInfo .level span {
+	width: 128px; height: 24px;
+	background-color: #91dfee;
+	border-radius: 12px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 14px;
+	display: inline-block;
+	color: #008a9b;
 }
 
