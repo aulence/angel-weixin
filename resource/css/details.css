@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/**
+* 功能：页面细节样式设置设置
+* 最后修改日期：2016年6月24日
+* 开发人员：全组
+**/
+
+/* 预定时间块 */
+.appointmentTime {
+    background-color: #fff;
+    border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
+    padding-top: 20px; padding-bottom: 20px;
+}
+
+/* 时间段选择容器 */
+.timeBucket {
+    width: 100%;
+    background-color: #89d3de;
+    border-bottom: 1px solid #79c3ce;
+    padding-top: 20px; padding-bottom: 20px;
+    overflow: auto;
+}
