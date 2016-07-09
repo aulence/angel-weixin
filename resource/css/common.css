@@ -6,6 +6,7 @@
 **/
 body,html {
     background-color: #eeeff1;
+	padding-bottom: 25px;
 }
 /******************************************/
 /* 公共声明部分 */
@@ -612,6 +613,58 @@ body,a,button,input,textarea {
     border-top: 7px solid #11a8bb; border-bottom: 2px dotted #ddd;
     font-size: 16px;
     color: #11a8bb;
+}
+/**** footer ****/
+footer.footerNav {
+	width: 100%;
+	background-color: #f6f6f6;
+	border-top: 1px solid #ddd;
+	overflow: hidden;
+	position: fixed;
+	left: 0; bottom: 0;
+	z-index: 995;
+}
+footer.footerNav a {
+	width: 33.33333333%; height: 50px;
+	padding-top: 6px; padding-bottom: 6px;
+	text-decoration: none;
+	color: #808080;
+	float: left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+footer.footerNav a i.icon, footer.footerNav a span {
+	margin: 0 auto;
+	display: block;
+}
+footer.footerNav a span {
+	height: 18px;
+	line-height: 26px;
+	text-align: center;
+	font-size: 13px;
+}
+footer.footerNav a i.icon {
+	width: 20px; height: 20px;
+	-webkit-background-size: 200% 100%;
+	background-size: 200% 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+footer.footerNav a i.icon.ico-home_footer {
+	background-image: url("../img/content/home-footer@2x.png");
+}
+footer.footerNav a i.icon.ico-shoppingCar_footer {
+	background-image: url("../img/content/shoppingCar-footer@2x.png");
+}
+footer.footerNav a i.icon.ico-user_footer {
+	background-image: url("../img/content/user-footer@2x.png");
+}
+/* 选中后 */
+footer.footerNav a.checkd {
+	color: #11a8bb;
+}
+footer.footerNav a.checkd i.icon.ico-home_footer, footer.footerNav a.checkd i.icon.ico-shoppingCar_footer, footer.footerNav a.checkd i.icon.ico-user_footer {
+	background-position: right;
 }
 
 /******************************************/
